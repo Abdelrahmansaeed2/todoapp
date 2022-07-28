@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todofinal/block_observer.dart';
 import 'package:todofinal/layout/Home_Layout.dart';
-import 'package:todofinal/screen_a.dart';
-import 'package:todofinal/screen_b.dart';
 
 void main() {
   BlocOverrides.runZoned(
@@ -129,31 +127,4 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 // Focus this section
-class TabsScreen extends StatelessWidget {
-  const TabsScreen({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return DefaultTabController(
-      length: 2,
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Home',style: TextStyle(color: Colors.black),),
-          backgroundColor: Colors.white,
-          bottom: const TabBar(
-
-            tabs: [
-              Tab( text: 'Sceen A'),
-              Tab( text: 'Screen B'),
-
-            ],
-          ),
-        ),
-        body: TabBarView(
-
-          children: [ScreenA(), ScreenB()],
-        ),
-      ),
-    );
-  }
-}
