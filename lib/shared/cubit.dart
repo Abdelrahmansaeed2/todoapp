@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:todofinal/layout/All_Tasks.dart';
-import 'package:todofinal/layout/Archive_Tasks.dart';
+import 'package:todofinal/layout/fav_Tasks.dart';
 import 'package:todofinal/layout/Done_Tasks.dart';
-import 'package:todofinal/layout/New_Tasks.dart';
+import 'package:todofinal/layout/Uncompletted_Tasks.dart';
 import 'package:todofinal/shared/states.dart';
 
 class AppCubit extends Cubit<AppStates> {
